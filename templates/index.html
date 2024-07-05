@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}
+main
+{% endblock %}
+
+{% block content %}
+<div class="container text-center">
+
+    <div class="col">
+      <a class="btn btn-info">Best Sellers</a>
+    </div>
+    <div class="row">
+        {{ current_user.username }}
+    </div>
+
+   <div class="row">
+    {% for product in products %}
+  <div class="col">
+     <div class="card" style="width: 12rem;">
+  <img src="{{ product['image'] }}" class="card-img-top" alt="..." width="50%" >
+  <div class="card-body">
+    <h5 class="card-title">{{ product['name'] }}</h5>
+    <p class="card-text">{{ product['price'] }}</p>
+    <a href="/product/{{ product['id'] }}" class="btn btn-primary">ნახვა</a>
+  </div>
+</div>
+  </div>
+      {% endfor %}
+   </div>
+
+
+{% endblock %}

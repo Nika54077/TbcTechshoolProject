@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}
+users
+{% endblock %}
+
+{% block content %}
+<div class="container my-2 py-3 bg-white shadow-lg">
+    <div class="row">
+        {% for user in registered_users %}
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{ user['email'] }}</h5>
+    <p class="card-text">{{ user['password'] }}</p>
+        <p class="card-text">{{ user['username'] }}</p>
+      <a class="btn btn-danger" href="/delete_user/{{ user['id'] }}">წაშლა</a>
+  </div>
+</div>
+
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+{% endblock %}
