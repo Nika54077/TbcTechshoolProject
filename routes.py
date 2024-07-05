@@ -9,7 +9,7 @@ products = [
     {"name": "Samsung Galaxy S22", "price": "1200", "image": "/static/galaxys22.jpg", "id": 1},
     {"name": "House Of Marley: positive vibration 2", "price": "70", "image": "/static/headphones.jpg", "id": 2},
     {"name": "Iphone 13", "price": "1600", "image": "/static/iPhone13.png", "id": 3},
-    {"name": "Iphone 14", "price": "2000", "image": "/static/iPhone14.jpg", "id": 4},
+
 
 ]
 
