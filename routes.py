@@ -7,7 +7,7 @@ from ext import app, db
 products = [
     {"name": "Apple airpods max", "price": "700", "image": "/static/apple headphones.jpg", "id": 0},
     {"name": "Samsung Galaxy S22", "price": "1200", "image": "/static/galaxys22.jpg", "id": 1},
-    {"name": "House Of Marley: positive vibration 2", "price": "70", "image": "/static/headphones.jpg", "id": 2},
+    {"name": "positive vibration 2", "price": "70", "image": "/static/headphones.jpg", "id": 2},
     {"name": "Iphone 13", "price": "1600", "image": "/static/iPhone13.png", "id": 3},
 
 
